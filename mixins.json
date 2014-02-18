@@ -1,5 +1,5 @@
 {
-    "path": "./mixins/",
+    "path": "./lesshat/mixins/",
     "mixins": [
         {
             "pluginName": "hatBackgroundImage",
