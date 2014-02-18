@@ -1,6 +1,6 @@
 # AbsurdHat
 
-Port of [LESSHat](http://lesshat.com/) to AbsurdJS
+Port of [LESSHat](http://lesshat.com/) to [AbsurdJS](http://absurdjs.com/). It is more like a automatic wrapper around the Javascript based LESSHat mixins.
 
 WARNING: This is a proof-of-concept, for now only hatBackgroundImage (aka .background-image()) is tested!
 
@@ -12,9 +12,36 @@ TODO
 
 ### Client-Side
 
-TODO
+```html
+<script src="absurdhat.js"></script>
+<script src="absurd.js"></script>
+<script>
+var absurd = Absurd();
+
+// add hat* plugins
+absurdhat(absurd);
+
+var absurd = Absurd();
+absurd.add({
+    body: {
+        hatBackgroundImage: 'linear-gradient(to bottom, #fb83fa 0%,#e93cec 100%)'
+    }
+}).compile(function(err, css) {   
+    console.clear();
+    console.log(css);
+});
+
+</script>
+```
+
+The client side build is generated using [browserify](http://browserify.org/).
+
+## Create own Build
+
+The current build only includes hatBackgroundImage. You can easily add more in mixin.json.
 
 ## TODO
 
 * Make tests work (should be not too hard)
 * Use include/exclude of mixins instead of hard coded config
+* Mixin Adapter needs to respect results.property
