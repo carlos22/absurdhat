@@ -429,19 +429,19 @@ function mixinAdapter(lessMixinImpl, name,  value, vendors) {
         if (useVendors.indexOf(vendor) === -1) {
             return true;
         }
-        var value = lessMixinImpl[vendor].call(this, value);
+        var result = lessMixinImpl[vendor].call(this, value);
         // skip when magic number is returned
-        if (value === 8121991) {
+        if (result === 8121991) {
             return true;
         }
         // fix + in fornt of rule if mixin removed it
-        if (value.charAt(0) === '+' && value.charAt(0) !== '+') {
-            value = '+' + value;
+        if (result.charAt(0) === '+' && result.charAt(0) !== '+') {
+            result = '+' + result;
         }
         // add rule
         // TODO: use lessMixinImpl.returns[vendor].property if available
         var prefixedMixinProperty = {};
-        prefixedMixinProperty['%' + i  + '%' + name] = value;
+        prefixedMixinProperty['%' + i  + '%' + name] = result;
         css.push(prefixedMixinProperty);
         ++i;
     });
