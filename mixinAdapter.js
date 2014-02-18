@@ -8,12 +8,12 @@
  */
 function mixinAdapter(lessMixinImpl, name,  value, vendors) {
     // allow all vendors of none given
-    vendors = vendors || ['ms', 'webkit', 'moz', 'opera'];
+    var useVendors = vendors || ['ms', 'webkit', 'moz', 'opera'];
     var css = [];
     var i = 0;
     (lessMixinImpl.vendors || []).forEach(function (vendor) {
         // skip vendor if not in vendors
-        if (vendors.indexOf(vendor) === -1) {
+        if (useVendors.indexOf(vendor) === -1) {
             return true;
         }
         var value = lessMixinImpl[vendor].call(this, value);
