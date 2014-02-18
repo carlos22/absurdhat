@@ -13,15 +13,14 @@ TODO
 ### Client-Side
 
 ```html
-<script src="absurdhat.js"></script>
-<script src="absurd.js"></script>
-<script>
+<script src="http://absurdjs.com/builds/absurd.js"></script>
+<script src="https://rawgithub.com/carlos22/absurdhat/master/build/absurdhat.js"><script>
 var absurd = Absurd();
 
 // add hat* plugins
 absurdhat(absurd);
 
-var absurd = Absurd();
+// use
 absurd.add({
     body: {
         hatBackgroundImage: 'linear-gradient(to bottom, #fb83fa 0%,#e93cec 100%)'
@@ -34,7 +33,9 @@ absurd.add({
 </script>
 ```
 
-The client side build is generated using [browserify](http://browserify.org/).
+**[Demo](http://jsbin.com/vecovoda/1/edit?html,js,console)**
+
+The client side build is generated using [browserify](http://browserify.org/). A standalone build named 'absurdhat' is generated. Make sure to use require() if you use requireJs or similar.
 
 ## Create own Build
 
