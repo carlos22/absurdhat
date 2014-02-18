@@ -1,14 +1,12 @@
 /**
  * Absurd Hat
- * @param {Object} config
- * @param {Array} config.vendors ['ms', 'webkit', 'moz', 'opera']
+ * @param {Array} vendors ['ms', 'webkit', 'moz', 'opera']
  */
-function absurdHat(api, config) {
-    config = config || {};
+function absurdHat(api, vendors) {
     // load generated loader
 	var loader = require('./loader');
     // do plugin calls
-    loader(api, config.vendors);
+    loader(api, vendors);
 };
 
 module.exports = absurdHat;
