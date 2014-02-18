@@ -33,7 +33,7 @@ absurd.add({
 </script>
 ```
 
-**[Demo](http://jsbin.com/vecovoda/1/edit?html,js,console)**
+**[Demo](http://jsbin.com/vecovoda/1/edit?js,console)**
 
 The client side build is generated using [browserify](http://browserify.org/). A standalone build named 'absurdhat' is generated. Make sure to use require() if you use requireJs or similar.
 
