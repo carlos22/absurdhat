@@ -1,0 +1,9 @@
+{
+    "path": "./mixins/",
+    "mixins": [
+        {
+            "pluginName": "hatBackgroundImage",
+            "name": "background-image"
+        }
+    ]
+}

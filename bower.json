@@ -1,0 +1,5 @@
+{
+  "name": "absurdhat",
+  "version": "0.0.1",
+  "main": "./build/absrudhat-client.js"
+}

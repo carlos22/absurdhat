@@ -1,0 +1,37 @@
+{
+  "name": "absurdhat",
+  "description": "Port of LESSHat to absurdJS",
+  "version": "0.0.1",
+  "homepage": "http://github.com/carlos22/absurdhat",
+  "author": {
+    "name": "Karl G",
+    "email": "carlos22b@gmail.com"
+  },
+  "keywords": [
+    "less",
+    "mixins",
+    "css",
+    "absurd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlos22/absurdhat"
+  },
+  "bugs": {
+    "url": "https://github.com/carlos22/absurdhat/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/carlos22/absurdhat/blob/master/LICENSE"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-cli": "*",
+    "mocha": "1.12.0",
+    "grunt-template": "~0.2.3",
+    "browserify": "~3.30.1",
+    "grunt-browserify": "~1.3.1"
+  }
+}
